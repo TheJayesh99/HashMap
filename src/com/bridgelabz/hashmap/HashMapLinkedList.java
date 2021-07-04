@@ -3,7 +3,7 @@ package com.bridgelabz.hashmap;
 public class HashMapLinkedList
 {
 	HashNode head;
-	
+
 	// method to add node in linked list
 	public void add(String key , int value) 
 	{
@@ -14,7 +14,7 @@ public class HashMapLinkedList
 		newNode.next = head;
 		head = newNode;
 	}
-	
+
 	// method to search a particular node from linked list
 	public HashNode search(String key)
 	{
@@ -28,9 +28,9 @@ public class HashMapLinkedList
 			traverse = traverse.next;
 		}
 		return null;
-		
+
 	}
-	
+
 	// method to delete a node from the linked list
 	public void delete(String key)
 	{
@@ -45,7 +45,7 @@ public class HashMapLinkedList
 			System.out.println(head.key+" Removed");
 			head = head.next;
 		}
-		
+
 		//find key and delete it
 		else
 		{	
